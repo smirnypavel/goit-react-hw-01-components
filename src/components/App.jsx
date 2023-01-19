@@ -1,7 +1,7 @@
 import { ProfileCard } from './Profile/ProfileCard/ProfileCard';
 import user from './Profile/ProfileCard/user.json';
-// import { Statistics } from './Statistics/Statistics';
-// import data from './Statistics/data.json';
+import { Statistics } from './Statistics/Statistics';
+import data from './Statistics/data.json';
 
 
 
@@ -18,7 +18,10 @@ export const App = () => {
       location={user.location}
       avatar={user.avatar}
       />
-     
+      <Statistics 
+      title="Upload stats" 
+      stats={data}
+      />
   </div>
   
  );
