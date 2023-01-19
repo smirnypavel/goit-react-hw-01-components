@@ -18,9 +18,7 @@ export const App = () => {
       location={user.location}
       avatar={user.avatar}
       />
-      {/* <Statistics 
-      title="Upload stats" 
-      stats={data} /> */}
+     
   </div>
   
  );
