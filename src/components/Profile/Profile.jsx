@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './ProfileCard.module.css';
+import css from './Profile.module.css';
 
-export const ProfileCard = ({username, tag, location, avatar, followers, views, likes}) =>{
+export const Profile = ({username, tag, location, avatar, followers, views, likes}) =>{
 return  (
 <div className={css.profile}>
       <div className={css.description}>
@@ -35,7 +35,7 @@ return  (
 
 }
 
-ProfileCard.propTypes = {
+Profile.propTypes = {
     stats: PropTypes.shape({
         followers: PropTypes.number.isRequired,
         views: PropTypes.number.isRequired,
@@ -48,4 +48,4 @@ ProfileCard.propTypes = {
     
 };
 
-export default ProfileCard
+export default Profile
