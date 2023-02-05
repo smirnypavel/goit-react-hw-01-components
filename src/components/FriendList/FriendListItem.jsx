@@ -6,7 +6,7 @@ export default function FriendsListItem({ avatar, name, isOnline }) {
   <li className={styles.item}>
    <span
     className={styles.status}
-    style={isOnline ? { backgroundColor: 'rgb(19 55 1)' } : { backgroundColor: 'rgb(50 2 2)' }}
+    style={isOnline ? { backgroundColor: 'rgba(87, 248, 7, 0.356)' } : { backgroundColor: 'rgba(247, 6, 6, 0.356)' }}
    ></span>
    <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
    <p className={styles.name}>{name}</p>
