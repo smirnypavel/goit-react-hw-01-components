@@ -18,9 +18,9 @@
    }
    
    .item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background: rgba(103, 101, 101, 0.356);
-    transition: all 0.8s;
+    transition: all 0.5s;
    }
    
    .item:not(:last-child) {

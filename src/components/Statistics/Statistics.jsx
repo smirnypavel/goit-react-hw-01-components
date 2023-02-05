@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Css from './Statistics.module.css';
 
 
-export const Statistics = ({title, stats}) =>{
+export default function Statistics  ({title, stats}){
     return  ( <section className = {Css.statistics} >
     {{ title } && <h2 className={Css.title}>{title}</h2>}
     <ul className = {Css.statList}>
@@ -28,4 +28,3 @@ Statistics.propTypes = {
     title: PropTypes.string
 };
 
-export default Statistics
