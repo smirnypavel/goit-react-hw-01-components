@@ -1,50 +1,42 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
+import styled from './Profile.module.css';
 
-export default function Profile  ({username, tag, location, avatar, followers, views, likes}){
-return  (
-<div className={css.profile}>
-      <div className={css.description}>
-    <img
-      src={avatar}
-      alt="User avatar"
-      className={css.avatar}
-    />
-    <p className={css.name}> {username} </p>
-    <p className={css.tag}>@{tag}</p>
-    <p className={css.location}>{location}</p>
-  </div>
+export default function Profile({ username, tag, location, avatar, stats }) {
+  return (
+    <div className={styled.profile}>
+      <div className={styled.description}>
+        <img src={avatar} alt="User avatar" className={styled.avatar} />
+        <p className={styled.name}>{username}</p>
+        <p className={styled.tag}>@{tag}</p>
+        <p className={styled.location}>{location}</p>
+      </div>
 
-  <ul className={css.statsList}>
-    <li className={css.statsItem}>
-      <span className={css.label}>Followers</span>
-      <span className={css.quantity}>{followers}</span>
-    </li>
-    <li className={css.statsItem}>
-      <span className={css.label}>Views</span>
-      <span className={css.quantity}>{views}</span>
-    </li>
-    <li className={css.statsItem}>
-      <span className={css.label}>Likes</span>
-      <span className={css.quantity}>{likes}</span>
-    </li>
-  </ul>
-</div>
-
-    )
-
+      <ul className={styled.statsList}>
+        <li className={styled.statsItem}>
+          <span className={styled.label}>Followers</span>
+          <span className={styled.quantity}>{stats.followers}</span>
+        </li>
+        <li className={styled.statsItem}>
+          <span className={styled.label}>Views</span>
+          <span className={styled.quantity}>{stats.views}</span>
+        </li>
+        <li className={styled.statsItem}>
+          <span className={styled.label}>Likes</span>
+          <span className={styled.quantity}>{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 Profile.propTypes = {
-    stats: PropTypes.shape({
-        followers: PropTypes.number.isRequired,
-        views: PropTypes.number.isRequired,
-        likes: PropTypes.number.isRequired,
-    }),
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired, 
-    location: PropTypes.string.isRequired, 
-    avatar: PropTypes.string.isRequired, 
-    
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
 };
-

@@ -1,59 +1,54 @@
 .friendList {
-    margin: 30px auto;
-    width: 330px;
-    padding-left: 0;
-   }
-   
-   .item {
-    padding: 15px 15px;
-    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16); */
-        border-radius: 30px;
-        background: linear-gradient(145deg, #cacaca, #f0f0f0);
-        box-shadow:  16px 16px 33px #cacaca,
-                     -16px -16px 33px #f6f6f6;
-    /* border-radius: 3px; */
-    background-color: #ffffff;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   
-   .item:hover {
-    transform: scale(1.05);
-    background: rgba(103, 101, 101, 0.356);
-    transition: all 0.5s;
-   }
-   
-   .item:not(:last-child) {
-    margin-bottom: 20px;
-   }
-   
-   .status {
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    margin-right: 10px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    
-   }
-   
-   .avatar {
-    width: 70px;
-    margin-right: 10px;
-    
-   }
-   
+  margin: 30px auto;
+  width: 330px;
+  padding-left: 0;
+}
 
+.item {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-   .name {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.01em;
-    color: #686f75;
-   }
+.item:hover {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  transition: all 0.5s;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.status {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.avatar {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.01em;
+  color: #686f75;
+}
